@@ -4,11 +4,11 @@ An App that switch to other interface with the help of intent and a link to with
 
 
 
-// Intent Explicite
+## Intent Explicite
 
 Activite 1
 Button btn =
-(Button)findViewById(R.id.button);
+(Button)findViewById(R.id.button); 
 btn.setOnClickListener(
 new View.OnClickListener() {
 public void onClick(View btn) {
@@ -37,13 +37,13 @@ getIntent().getStringExtra("n")+" "
 res.setText("Bonjour " + r);
 
 
-// Intent Explicite
+## Intent Explicite
 
 Button btn = (Button)findViewById(R.id.button);
 btn.setOnClickListener(
 new View.OnClickListener() {
 public void onClick(View btn) {
-String url = "http://www.isimg.rnu.tn";
+String url = "http://www.google.com";
 Uri uri = Uri.parse(url);
 Intent sendIntent = new Intent(Intent.ACTION_VIEW, uri);
 if(sendIntent.resolveActivity(getPackageManager())!=null){
