@@ -7,6 +7,7 @@ An App that switch to other interface with the help of intent and a link to with
 ## Intent Explicite
 
 Activite 1
+```
 Button btn =
 (Button)findViewById(R.id.button); 
 btn.setOnClickListener(
@@ -21,10 +22,11 @@ prenom.getText().toString());
 startActivity(i);
 } });
 
-
+```
 
 
 Activite 2
+``
 protected void onCreate(Bundle
 savedInstanceState) {
 super.onCreate( savedInstanceState);
@@ -35,10 +37,10 @@ String r =
 getIntent().getStringExtra("n")+" "
 +getIntent().getStringExtra("p");
 res.setText("Bonjour " + r);
-
+``
 
 ## Intent Explicite
-
+``
 Button btn = (Button)findViewById(R.id.button);
 btn.setOnClickListener(
 new View.OnClickListener() {
@@ -53,3 +55,5 @@ else
 Toast.makeText(getApplicationContext(), "Erreur",
 Toast.LENGTH_SHORT).show();
 } });}
+
+``
