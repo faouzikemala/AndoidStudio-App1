@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".Signup"
+            android:exported="false" />
+        <activity
             android:name=".Act2"
             android:exported="false" />
         <activity

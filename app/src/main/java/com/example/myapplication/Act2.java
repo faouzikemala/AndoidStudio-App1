@@ -13,7 +13,7 @@ public class Act2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_act2);
 
-        TextView res=(TextView)findViewById(R.id.txt54);
+        TextView res=(TextView)findViewById(R.id.textView);
 
 
         String r =

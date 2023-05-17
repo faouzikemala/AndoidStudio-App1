@@ -24,7 +24,10 @@ public class MainActivity extends AppCompatActivity {
         Button b2=(Button) findViewById(R.id.btn2);
 
 
-        /* Explicite */
+
+
+
+        /* Explicite Login */
         b1.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View btn) {
@@ -33,6 +36,18 @@ public class MainActivity extends AppCompatActivity {
                         i.putExtra("p", t2.getText().toString());
                         startActivity(i);
                     } });
+
+        /*Explicite Signup */
+
+
+        Button b3=(Button)findViewById(R.id.btn3);
+        b3.setOnClickListener(
+                new View.OnClickListener() {
+            public void onClick(View btn3) {
+                Intent i=new Intent(MainActivity.this, Signup.class);
+                startActivity(i);
+            }
+        });
 
 
 
